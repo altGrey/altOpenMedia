@@ -1,0 +1,644 @@
+/* INIT ------------------------------
+ * This is done for browser compatibility
+ * */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/* TAGS ------------------------------
+ * */
+body {
+	color: #efefef;
+	background-color: #000;
+	font-family: 'Muli', sans-serif;
+	font-size: 110%;
+	background-image: url('/media/textures/stock/ui/headerBG.jpg');
+	background-repeat: repeat-x;
+	z-index: 0;
+}
+a:link { color: #FFA824; text-decoration:none; }
+a:active { color: #F88541; text-decoration:none; }
+a:hover { color: #CDAF95; text-decoration:underline; }
+a:visited {  color: #FFAA00; text-decoration:none; }
+/* DIVS ------------------------------
+ * */
+.wrapper {
+	width: 0px;
+	height: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.schedWrap {
+	background-image: url('/media/textures/stock/ui/darkMetalsmall.jpg');
+	background-attachment: fixed;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	overflow: hidden;
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 22px;
+	
+}
+.metaWrap {
+	background-image: url('/media/textures/stock/ui/darkMetalsmall.jpg');
+	background-attachment: fixed;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	overflow: hidden;
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 22px;
+	
+}
+
+.PALmetaWrap {
+	background-image: url('/media/textures/stock/ui/darkMetalsmall.jpg');
+	background-attachment: fixed;
+	width: 800px;
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	overflow: hidden;
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 22px;
+	
+}
+
+.mediaWrap {
+	background-image: url('/media/textures/stock/ui/darkMetalsmall.jpg');
+	background-attachment: fixed;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	overflow: hidden;
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 22px;
+	
+}
+.communicatorWrap {
+	background-image: url('/media/textures/stock/ui/darkMetalsmall.jpg');
+	background-attachment: fixed;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	overflow: hidden;
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 22px;
+	
+}
+.headWrap {
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	z-index: 4;
+}
+.headerLogo {
+	width: 728px;
+	height: 214px;
+	background-image: url('/media/textures/stock/ui/headerTextLogo.png');
+	background-repeat: no-repeat;
+	z-index: 4;
+	margin: auto;
+}
+.headerLocalAd {
+}
+.footerWrap {
+	background-image: url('/media/textures/stock/ui/footerBG.jpg');
+	background-repeat: repeat-x;
+	background-size: 100% 200%;
+	width: 100%;
+	height: 175px;
+	z-index: 0;
+	position: fixed;
+	bottom: 0;
+}
+.BoB3D {
+	width: 100%;
+	height: 500px;
+	z-index: 1;
+	margin-top: 50%;
+	margin-bottom: 50%;
+}
+.schedInnerWrap {
+	width: 500px;
+	height: 300px;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 8;
+}
+.schedInnerVertiBird {
+	display: inline-block;
+	width: 1.6em;
+    font-size: 35px;
+    letter-spacing: 50px;
+    z-index: inherit;
+    padding-top: 45px;
+}
+.schedInnerSlot {
+	width: 90%;
+	visibility: hidden;
+	overflow: hidden;
+}
+.sInnerTime {
+	margin-left: 20px;
+	width: 30%;
+}
+.sInnerShow {
+	width: 60%;
+}
+.showTime1 {
+	height: 40px;
+	
+	border-bottom: solid 1px #cfcfcf;
+	
+}
+.showTime2 {
+	height: 80px;
+	
+	border-bottom: solid 1px #cfcfcf;
+}
+.showTime3 {
+	height: 120px;
+	
+	border-bottom: solid 1px #cfcfcf;
+}
+.showTime4 {
+	height: 160px;
+	
+	border-bottom: solid 1px #cfcfcf;
+}
+.showTime5 {
+	height: 200px;
+	
+	border-bottom: solid 1px #cfcfcf;
+}
+.showTime6 {
+	height: 240px;
+	
+	border-bottom: solid 1px #cfcfcf;
+}
+#lio {
+	background-color: rgba(180,180,180,0.1);
+	font-size: 120%;
+	padding: 8px 8px 8px 8px;
+
+	z-index: inherit;
+	margin-left: 30px;
+}
+#lie {
+	background-color: rgba(180,180,180,0.6);
+	font-size: 120%;
+	padding: 8px 8px 8px 8px;
+
+	z-index: inherit;
+	margin-left: 30px;
+	
+}
+.schedList {
+}
+.schedDate {
+	color: rgba(255,255,255,0.40);
+	width: 500px;
+	height: 300px;
+	z-index: 7;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+.schedSHOW {
+	
+	
+}
+.schedTIME {
+	
+	padding-right: 30px;
+	
+}
+.metaInnerWrap {
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 8;
+}
+
+.PALmetaInnerWrap {
+	width: 690px;
+	height: 490px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,1.0);
+	border: solid 1px #aaa;
+	border-radius: 20px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 8;
+}
+.metaInnerVertiBird {
+	display: inline-block;
+	width: 1.6em;
+    font-size: 35px;
+    letter-spacing: 50px;
+    z-index: inherit;
+    padding-top: 45px;
+}
+.globoWrap {
+	
+	width: 900px;
+	height: 400px;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+	z-index: 6;
+	overflow: hidden;
+}
+.comHUDWrap {
+	
+	width: 700px;
+	height: 350px;
+	z-index: 9;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+.comHUDglass {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 40px;
+	left: 160px;
+	z-index: 8;
+	opacity: 0.7;
+}
+.comHUDscreen {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 40px;
+	left: 160px;
+	z-index: 7;
+	background-image: url('/media/textures/stock/ui/waveplayer.jpg');
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 3s linear infinite;
+	-ms-animation: animatedBackground 3s linear infinite;
+	-moz-animation: animatedBackground 3s linear infinite;
+	-webkit-animation: animatedBackground 3s linear infinite;
+}
+
+.effexFade2Black {
+color: rgba(255,200,0,1);
+	animation: fade2Black alternate 1s infinite;
+	-ms-animation: afade2Black alternate 1s infinite;
+	-moz-animation: fade2Black alternate 1s infinite;
+	-webkit-animation: fade2Black alternate 1s infinite;
+}
+/* IFRAMES ---------------------------
+ * */
+.bigFoot {
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+}
+/* Tables ---------------------------
+ * */
+/* .tdvert - CREDIT =====================
+ * 
+ * Credit goes to: Jeffrey Way (http://code.tutsplus.com/tutorials/the-easiest-way-to-create-vertical-text-with-css--net-15284)
+ * 
+ * */
+.sched {
+}
+.tdvert {
+	width: 1em;
+    font-size: 20px;
+    letter-spacing: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    padding-left: 8px;
+}
+.schedALT1 {
+	background-color: #222;
+}
+.schedALT2 {
+	background-color: #333;
+}
+.schedShow {
+	font-size: 120%;
+}
+
+
+.BobLaunch {
+	background-image: url('/media/textures/stock/ui/Settings.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 18px; 
+    visibility: visible;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.BobVolumeLaunch {
+	background-image: url('/media/textures/stock/ui/iPod.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 188px; 
+    visibility: visible;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.BobClose {
+	background-image: url('/media/textures/stock/ui/Close.png'); 
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width:40px; 
+    height: 40px; 
+	margin: 8px;
+    visibility: inherit;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.BobArrowUp {
+	
+	background-image: url('/media/textures/stock/ui/arrow-up.png'); 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width:30px; 
+    height: 30px; 
+	position: fixed;
+	top: 125px;
+	bottom: 275px;
+	left: 8px;
+	right: 592px;
+	margin: auto;
+	z-index: 9;
+    visibility: inherit;
+    opacity:0.6;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.BobArrowDown {
+	
+	background-image: url('/media/textures/stock/ui/arrow-down.png'); 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width:30px; 
+    height: 30px; 
+	position: fixed;
+	top: 325px;
+	bottom: 75px;
+	left: 8px;
+	right: 592px;
+	margin: auto;
+	z-index: 9;
+    visibility: inherit;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.BobSchedLaunch {
+	background-image: url('/media/textures/stock/ui/Calendar.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 348px; 
+    visibility: visible;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.BobChatLaunch {
+	background-image: url('/media/textures/stock/ui/Chat.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 508px; 
+    visibility: visible;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.BobTwitterLaunch {
+	background-image: url('/media/textures/stock/ui/twitter.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 668px; 
+    visibility: visible;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.BobMailLaunch {
+	background-image: url('/media/textures/stock/ui/darkmail.png'); 
+    background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 508px; 
+    visibility: visible;
+    opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.BobVolumeMuteLaunch {
+	background-image: url('/media/textures/stock/ui/skinnyBobLaunch.png'); 
+    background-repeat: no-repeat;
+    z-index: 4; 
+    position: fixed;
+    width:150px; 
+    height: 150px; 
+    bottom: 11px; 
+    right: 18px; 
+    visibility: visible;
+}
+
+
+.BobMetaLoginLaunch {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+    opacity:0.4;
+	z-index: 9;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+/* Grow */
+
+.BoBgrow {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
+}
+
+.BoBgrow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity:1.0;
+  filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+/* Background Scrolling Animation - CREDIT =====================
+ * 
+ * Credit goes to: David Walsh (http://davidwalsh.name/background-animation-css)
+ * 
+ * */
+
+@keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-ms-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-moz-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+
+
+#animate-area	{ 
+	width: 560px; 
+	height: 400px; 
+	background-image: url(bg-clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+	-ms-animation: animatedBackground 40s linear infinite;
+	-moz-animation: animatedBackground 40s linear infinite;
+	-webkit-animation: animatedBackground 40s linear infinite;
+}
+
+/*
+ * END BACKGROUND SCROLLING ANIMATION
+ * =================================================================
+ * */
+ 
+ @keyframes fade2Black {
+ 
+	from {
+	color: rgba(255,200,0,0.3);
+	}
+	to {
+	color: rgba(255,200,0,1);
+	}
+ }
+
+@-webkit-keyframes fade2Black {
+			from { color: rgba(255,200,0,0.3); }
+			to { color: rgba(255,200,0,1); }
+		}
+		@-ms-keyframes fade2Black {
+			from { color: rgba(255,200,0,0.3); }
+			to { color: rgba(255,200,0,1); }
+		}
+		@-moz-keyframes fade2Black  {
+			from { color: rgba(255,200,0,0.3); }
+			to { color: rgba(255,200,0,1); }
+		}
+#clock {
+        	position: relative;
+        	width: 600px;
+        	height: 600px;
+        	margin: 20px auto 0 auto;
+        	background: url(images/clockface.jpg);
+        	list-style: none;
+        	}
+        
+        #sec, #min, #hour {
+        	position: absolute;
+        	width: 30px;
+        	height: 600px;
+        	top: 0px;
+        	left: 285px;
+        	}
+        
+        #sec {
+        	background: url(images/sechand.png);
+        	z-index: 3;
+           	}
+           
+        #min {
+        	background: url(images/minhand.png);
+        	z-index: 2;
+           	}
+           
+        #hour {
+        	background: url(images/hourhand.png);
+        	z-index: 1;
+           	}
